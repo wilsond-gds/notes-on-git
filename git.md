@@ -56,16 +56,17 @@ These terms are defined in [**git for humans** (video)](https://www.youtube.com/
 
 
 Reset the git history to a particular point in your work history
-`[branch][folder]$ git reset --hard origin/[folder]`
-`HEAD is now at [hash] [commit message]`
+* `[branch][folder]$ git reset --hard origin/[folder]`  
+* `HEAD is now at [hash] [commit message]`
 
 Rebase to remove commits that aren't required - change `pick` to `drop`
-`$ git rebase -i HEAD~2`
+* `$ git rebase -i HEAD~2`
 
 Force push to override the tracking in github
-`$ git push --force`
+* `$ git push --force`
 
-Forgotten to sign the commit? Amend it.
-`$ git commit --amend --no-edit -S`
-Then force push again to override the tracking in github
-`$ git push --force`
+Forgotten to sign the commit? 
+* First, amend the commit to sign it
+* `$ git commit --amend --no-edit -S`
+* Then force push again to override the tracking in github
+* `$ git push --force`
