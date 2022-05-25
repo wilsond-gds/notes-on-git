@@ -36,7 +36,7 @@ These terms are defined in [**git for humans** (video)](https://www.youtube.com/
 ## Playing around with the code and just want to go back to a clean state
 
 * `git reset --hard`
-* `git pull https://github.com/alphagov/di-ipv-core-front.git main`
+* `git pull [https path to repo] main`
 
 ## See changes to a file
 
@@ -45,8 +45,8 @@ These terms are defined in [**git for humans** (video)](https://www.youtube.com/
 ## copy a file from one branch to another
 
 * `git fetch`
-* `git checkout -m master ~/core-front/src/app/oauth2/middleware.test.js`
-* `git add ~/core-front/src/app/oauth2/middleware.test.js`
+* `git checkout -m master [path to file]`
+* `git add [path to file]`
 * `git commit`
 
 
