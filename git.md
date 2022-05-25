@@ -52,6 +52,8 @@ These terms are defined in [**git for humans** (video)](https://www.youtube.com/
 
 ## Create pull request
 
+**Remember** when creating multiple pull requests, always `git checkout` back to the main branch before creating another branch for the next pull request.
+
 ## Rebase and merge
 
 
