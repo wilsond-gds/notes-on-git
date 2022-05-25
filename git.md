@@ -56,8 +56,8 @@ These terms are defined in [**git for humans** (video)](https://www.youtube.com/
 
 
 Reset the git history to a particular point in your work history
-`[PYIC1265][~/PYIC-1265/di-ipv-core-front]$ git reset --hard origin/PYIC1265`
-`HEAD is now at 88c5bf8 PYIC-1265 Add Create Technical Error (unrecoverable) page`
+`[branch][folder]$ git reset --hard origin/[folder]`
+`HEAD is now at [hash] [commit message]`
 
 Rebase to remove commits that aren't required - change `pick` to `drop`
 `$ git rebase -i HEAD~2`
