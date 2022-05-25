@@ -13,7 +13,7 @@
 * `push` get new commits to the repo from the remote
 * `pull` send your new commits to the remote
 
-These terms are defined in [**git for humans** (video)](https://www.youtube.com/watch?v=eWxxfttcMts&t=1s)
+These terms are defined in [**git for humans** (video)](https://www.youtube.com/watch?v=eWxxfttcMts&t=1s). See also [**getting more from git** (video)](https://www.youtube.com/watch?v=FQ4IdcrOUz0)
 
 
 ## Start with these commands
