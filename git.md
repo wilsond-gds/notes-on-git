@@ -2,6 +2,12 @@
 
 ## Definitions
 
+Git is a distributed system so everyone using the git repo has the ability to check in where they are and everyone else knows what’s been happening in the repo. You can also download the entire repository to work on it individually.
+
+We are aiming for ‘atomic commits’ with meaningful commit messages.
+
+The **working directory** is in sync with your local file system and it knows when you’ve made any changes. Your **staging index** is like a point on the end of your git commit history. Your **commit history** is the list of commits you’ve made.
+
 * `repository` your project folder
 * `commit` save a snapshot
 * `hash` a computer generated ID
@@ -13,8 +19,9 @@
 * `push` get new commits to the repo from the remote
 * `pull` send your new commits to the remote
 
-These terms are defined in [**git for humans** (video)](https://www.youtube.com/watch?v=eWxxfttcMts&t=1s). See also [**getting more from git** (video)](https://www.youtube.com/watch?v=FQ4IdcrOUz0)
+These terms are defined in [**git for humans** (video)](https://www.youtube.com/watch?v=eWxxfttcMts&t=1s). See also [**getting more from git** (video)](https://www.youtube.com/watch?v=FQ4IdcrOUz0).
 
+Writing good commit message is hard but useful, as it requires you to really understand the code base, what you’ve changed, and why it’s a good change. It also helps other people answer the same questions.
 
 ## Start with these commands
 
@@ -26,6 +33,10 @@ These terms are defined in [**git for humans** (video)](https://www.youtube.com/
 
 * Create a branch and switch to it `git checkout -b branch-name`
 * Or longer form, `git branch branch-name`, `git checkout branch-name`
+
+## Staging commits
+
+Stage commits (get them ready to become part of the official repo) by doing `git add`. `git add --patch` will ask you which bits of a file you want to add. These bits are called `hunks`.
 
 ## Finished with branch, won't merge
 
@@ -56,7 +67,6 @@ These terms are defined in [**git for humans** (video)](https://www.youtube.com/
 
 ## Rebase and merge
 
-
 Reset the git history to a particular point in your work history
 * `[branch][folder]$ git reset --hard origin/[folder]`  
 * `HEAD is now at [hash] [commit message]`
@@ -72,3 +82,26 @@ Forgotten to sign the commit?
 * `$ git commit --amend --no-edit -S`
 * Then force push again to override the tracking in github
 * `$ git push --force`
+
+## Amending small changes in your history
+
+```
+git add --patch
+git commit --amend
+git reset [sha]
+```
+
+[View the video section](https://youtu.be/FQ4IdcrOUz0?t=1463) explaining these commands. 
+
+* See above for `git add --patch`. 
+* `git commit --amend` lets you amend your last commit. 
+* `git reset` is almost the opposite of `git add` and `git commit` but it’s not exactly the same. Find the `SHA` of the commit and then do `git reset sha` to go back to the state of the repo at that commit. `git reset sha --hard` will go back and forget everything before that point.
+
+## Making big changes in your git history
+
+* `git rebase` [video section](https://youtu.be/FQ4IdcrOUz0?t=1866) allows you to access more tools that can change your git history. **Only use rebasing on local unpublished branches**.
+* `git rebase --abort` reduces surprises in the process of rebasing.
+* `git rebase --interactive` gives you an interactive list of changes to your repo. 
+* `git show b` will show the difference between two commits.
+
+
