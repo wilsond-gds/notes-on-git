@@ -102,6 +102,4 @@ git reset [sha]
 * `git rebase` [video section](https://youtu.be/FQ4IdcrOUz0?t=1866) allows you to access more tools that can change your git history. **Only use rebasing on local unpublished branches**.
 * `git rebase --abort` reduces surprises in the process of rebasing.
 * `git rebase --interactive` gives you an interactive list of changes to your repo. 
-* `git show b` will show the difference between two commits.
-
-
+* `git show -b` will show the difference between two commits.
