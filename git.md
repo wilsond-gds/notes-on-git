@@ -28,6 +28,7 @@ Writing good commit message is hard but useful, as it requires you to really und
 * Create a git managed folder `git init`
 * Pull from a remote repository `git pull https://github.com/wilsond-gds/vsc-learn.git`
 * Check status `git status`
+* Which branch am I on? `git rev-parse --abbrev-ref HEAD`
 
 ## Create a branch
 
