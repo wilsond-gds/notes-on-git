@@ -13,8 +13,9 @@ If you want to keep the original content of a block, but then add extra code to 
 ```
 {% block standardBlock %}
 <p>My extra code</p>
-{# Then call super to add the content generated in the other definition of standardBlock. You could do this before your addition as well. #}
+{# Then call super to add the content generated in the other definition of standardBlock. #}
 {{ super() }}
+{# You could do this before your addition as well. #}
 {% endblock %}
 ```
 
