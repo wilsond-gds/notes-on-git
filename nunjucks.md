@@ -8,12 +8,13 @@
 
 ## Add things to the expected output of a block
 
+If you want to keep the original content of a block, but then add extra code to it, use the `super()` command. This will add the original content at the point you specify, like so:
+
 ```
 {% block standardBlock %}
-Before super is called
-{# will contain the content generated in standardBlock #}
+<p>My extra code</p>
+{# Then call super to add the content generated in the other definition of standardBlock. You could do this before your addition as well. #}
 {{ super() }}
-After super is called
 {% endblock %}
 ```
 
