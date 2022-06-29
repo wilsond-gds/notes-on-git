@@ -104,3 +104,17 @@ git reset [sha]
 * `git rebase --abort` reduces surprises in the process of rebasing.
 * `git rebase --interactive` gives you an interactive list of changes to your repo. 
 * `git show -b` will show the difference between two commits.
+
+## commands to attempt to understand fully
+
+* `git checkout` and related flows
+* `git rebase` and related flows
+* `git stash pop` and `git stash apply`
+* `git log --show-signature`
+* `git push +[branch-name]` to override local changes
+
+## Vim commands related to working with git
+
+* `:cq` clears and quits
+* `:q` runs commands
+* `:wq` writes and runs commands
