@@ -29,3 +29,10 @@ If you want to keep the original content of a block, but then add extra code to 
 {% include "[path-to-content]" %}
 {% endif %}
 ```
+Set can either be used on a single line (as above) or enclose multiple lines, like so:
+```
+{% set longHTML %}
+ <p>This is some content</p>
+{% endset %}
+{{ longHTML }}
+```
