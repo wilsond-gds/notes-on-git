@@ -1,5 +1,7 @@
 # Useful nunjucks snippets
 
+This is a short list of some useful nunjucks commands. [Find the official nunjucks documentation](https://mozilla.github.io/nunjucks/templating.html) online.
+
 ## Find out what’s in an object
 
 ```
