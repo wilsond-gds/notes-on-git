@@ -1,6 +1,6 @@
 # Useful nunjucks snippets
 
-This is a short list of some useful nunjucks commands. [Find the official nunjucks documentation](https://mozilla.github.io/nunjucks/templating.html) at the Nunjucks website. Nunjucks is a powerful templating language.
+This is a short list of some useful nunjucks commands. [Find the official nunjucks documentation](https://mozilla.github.io/nunjucks/templating.html) at the Nunjucks website. Nunjucks is a powerful templating language often used in Node.js projects.
 
 ## Find out what’s in an object
 
