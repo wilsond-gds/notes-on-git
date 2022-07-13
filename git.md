@@ -2,8 +2,6 @@
 
 ## Definitions
 
-I am making a mistake here, as this branch is out of sync with the other one.
-
 Git is a distributed system so everyone using the git repo has the ability to check in where they are and everyone else knows what’s been happening in the repo. You can also download the entire repository to work on it individually.
 
 We are aiming for ‘atomic commits’ with meaningful commit messages.
