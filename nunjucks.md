@@ -1,6 +1,6 @@
 # Useful nunjucks snippets
 
-This is a short list of some useful nunjucks commands. [Find the official nunjucks documentation](https://mozilla.github.io/nunjucks/templating.html) online.
+This is a short list of some useful nunjucks commands. [Find the official nunjucks documentation](https://mozilla.github.io/nunjucks/templating.html) at the Nunjucks website.
 
 ## Find out what’s in an object
 
