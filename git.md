@@ -2,6 +2,8 @@
 
 ## Definitions
 
+I am making a mistake here, as this branch is out of sync with the other one.
+
 Git is a distributed system so everyone using the git repo has the ability to check in where they are and everyone else knows what’s been happening in the repo. You can also download the entire repository to work on it individually.
 
 We are aiming for ‘atomic commits’ with meaningful commit messages.
@@ -43,7 +45,7 @@ Webstorm does not seem to automatically refresh files, but will turn the filenam
 
 You can work on a branch and make changes to as many files as you like, but before returning to `main` from the branch, `git add .` and `git commit -S -m "message"` your changes, so you can see the differences between `main` and your branch.
 
-One way to merge your changes is to do `git rebase [name of your working branch]` and the changes in your branch will be merged into the target branch (usually `main`).
+One way to merge your changes is to do `git rebase [name of your working branch]` and the changes in your branch will be merged into the target branch (usually `main`). `git rebase` will ignore changes that you might have made in other branches, and will just copy the version of the file in your working branch over the top of your target branch.
 
 ## Staging commits
 
