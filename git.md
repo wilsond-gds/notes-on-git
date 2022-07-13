@@ -35,7 +35,9 @@ Writing good commit message is hard but useful, as it requires you to really und
 * Create a branch and switch to it `git checkout -b branch-name`
 * Or longer form, `git branch branch-name`, `git checkout branch-name`
 
-Your mental model may be that once you’ve created a branch, changes to the files you make ‘on that branch’ will not be reflected elsewhere. This is sensible but not quite right. **Git does not begin to show the differences between versions of files in different branches** until the changes to a file or files are added and committed to the working branch.
+Your mental model may be that once you’ve created a branch, changes to the files you make ‘on that branch’ will not be reflected elsewhere. This is sensible but not quite right. **Git does not begin to show the differences between versions of files in different branches** until the changes to a file or files are added and committed to the working branch. 
+
+Webstorm does not seem to automatically refresh files, but will turn the filename yellow if there is a different version of the file on another branch.
 
 ## Staging commits
 
