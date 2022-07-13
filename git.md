@@ -35,6 +35,8 @@ Writing good commit message is hard but useful, as it requires you to really und
 * Create a branch and switch to it `git checkout -b branch-name`
 * Or longer form, `git branch branch-name`, `git checkout branch-name`
 
+Your mental model may be that once you’ve created a branch, changes to the files you make ‘on that branch’ will not be reflected elsewhere. This is sensible but not quite right. **Git does not begin to show the differences between versions of files in different branches** until the changes to a file or files are added and committed to the working branch.
+
 ## Staging commits
 
 Stage commits (get them ready to become part of the official repo) by doing `git add`. `git add --patch` will ask you which bits of a file you want to add. These bits are called `hunks`.
